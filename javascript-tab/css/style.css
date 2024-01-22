@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+}
+
+button:focus, input:focus, textarea:focus {
+	outline: 0;
+}
+
+body {
+	background: #219A9A;
+}
+
+.tab_wrapper {
+	padding: 80px 0;
+}
+
+.head_text {
+	font-size: 35px;
+	font-weight: 700;
+	color: #ffffff;
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+.tab_wrap {
+	max-width: 845px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.tab button {
+	background: #ffffff;
+	padding: 44px  28px 28px 28px;
+	box-shadow: 0px 4.96px 3.74px rgba(0, 0, 0, 0.05);
+	border-radius: 10px;
+	border: 4px solid transparent;
+	cursor: pointer;
+	margin: 0 6px;
+	position: relative;
+	margin-bottom: 20px;
+	transition: .3s;
+}
+
+.tab button:hover,
+.tab button.active {
+	border: 4px solid red;
+}
+
+.tab button::before {
+	content: "";
+	position: absolute;
+	bottom: -11px;
+	left: 50%;
+	width: 21px;
+	height: 21px;
+	transform: translateX(-50%) rotate(45deg);
+	background: #ffffff;
+}
+
+.tab button img {
+	width: 100%;
+	border-radius: 10px;
+}
+
+.tab button p {
+	font-size: 20px;
+	font-weight: 600;
+	margin-top: 10px;
+	color: #000000;
+}
+
+.tabcontent {
+	padding: 15px;
+	background: #ffffff;
+	color: #000000;
+	font-size: 14px;
+	line-height: 26px;
+	margin: 0 10px;
+	border-radius: 10px;
+	display: none;
+	transition: .3s;
+}
